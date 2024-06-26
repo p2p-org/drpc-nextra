@@ -1,0 +1,20 @@
+.useCases {
+  background: rgba(101, 154, 255, 0.1);
+  border-left: 4px solid #659aff;
+  height: 100%;
+}
+
+.ul {
+  list-style-type: disc;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.li {
+  margin-bottom: 4px;
+}
+
+.icon {
+  position: relative;
+  top: 3px;
+}

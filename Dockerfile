@@ -7,9 +7,8 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
-RUN yarn global add pnpm
-RUN pnpm i --frozen-lockfile
+COPY package.json yarn.lock* package-lock.json* ./
+RUN --mount=type=cache,target=/root/.yarn YARN_CACHE_FOLDER=/root/.yarn yarn --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -18,8 +17,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED 1
-RUN yarn global add pnpm@7.27.1
-RUN pnpm run build
+RUN --mount=type=cache,target=/root/.yarn YARN_CACHE_FOLDER=/root/.yarn yarn build
 
 FROM base AS runner
 WORKDIR /app

@@ -27,9 +27,20 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     return {
       titleTemplate: "Documentation for dRPC | Docs for dRPC Platform",
-      description: "Explore comprehensive documentation for dRPC and streamlining your development process. Discover guides, examples, and tips. 💻📗",
-      ...(asPath === '/' ? {canonical: "https://docs.drpc.org/"} : {} )
+      description:
+        "Explore comprehensive documentation for dRPC and streamlining your development process. Discover guides, examples, and tips. 💻📗",
+      ...(asPath === "/" ? { canonical: "https://docs.drpc.org/" } : {}),
     };
+  },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
+  nextThemes: {
+    defaultTheme: "dark",
+    forcedTheme: "dark",
+  },
+  themeSwitch: {
+    component: () => null,
   },
 };
 

@@ -1,0 +1,72 @@
+.text {
+  line-height: 160%;
+  letter-spacing: -0.3px;
+}
+.spacingSmall {
+  letter-spacing: -0.3px;
+}
+.spacingBig {
+  letter-spacing: -0.6px;
+}
+.spacingNone {
+  letter-spacing: normal;
+}
+
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+
+.colorWhite {
+  color: white;
+}
+.colorWhiteLike {
+  color: #fafafa;
+}
+.colorBlack {
+  color: black;
+}
+.colorGray {
+  color: #7c7c7c;
+}
+.colorGrayLike {
+  color: #c2c2c2;
+}
+
+.sizeXs {
+  font-size: 12px;
+}
+.sizeSm {
+  font-size: 14px;
+}
+.sizeMd {
+  font-size: 16px;
+}
+.sizeLg {
+  font-size: 20px;
+}
+
+.fontWeightNormal {
+  font-weight: 400;
+}
+.fontWeightMedium {
+  font-weight: 500;
+}
+.fontWeightSemibold {
+  font-weight: 600;
+}
+.fontWeightBold {
+  font-weight: 700;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
+}

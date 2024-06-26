@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #181818;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  flex: 1 0 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.codeHighlight {
+  background-color: #181818;
+  padding: 12px;
+  max-height: 420px;
+  overflow: auto;
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 100%;
+}
+.footer {
+  flex: 1 0 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.pointer {
+  cursor: pointer;
+}

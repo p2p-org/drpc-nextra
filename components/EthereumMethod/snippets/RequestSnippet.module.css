@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #323b41;
+  flex-wrap: wrap;
+  border-radius: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  flex: 1 0 100%;
+}
+.codeHighlight {
+  background-color: #323b41;
+  padding: 12px;
+}
+
+.footer {
+  flex: 1 0 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.iconCopy {
+  cursor: pointer;
+}
+.examplesWrap {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}

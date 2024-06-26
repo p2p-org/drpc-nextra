@@ -4,6 +4,22 @@
   "gettingstarted": "Getting started",
   "pricing": "Pricing",
   "specs": "Implementation docs",
-  "web-api": "API",
-  "providers": "Providers"
+  "web-api": "Client Statistics API",
+  "providers": "Providers",
+  "-- Methods Documentation": {
+    "type": "separator",
+    "title": "Methods Documentation"
+  },
+  "ethereum-api": {
+    "title": "Ethereum API",
+    "theme": {
+      "breadcrumb": false
+    }
+  },
+  "drpc-account": {
+    "title": "My Account",
+    "type": "page",
+    "href": "https://drpc.org/login",
+    "newWindow": true
+  }
 }

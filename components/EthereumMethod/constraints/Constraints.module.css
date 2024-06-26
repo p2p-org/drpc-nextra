@@ -1,0 +1,20 @@
+.constraints {
+  background: rgba(212, 179, 0, 0.1);
+  border-left: 4px solid #d4b300;
+  height: 100%;
+}
+
+.ul {
+  list-style-type: disc;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.li {
+  margin-bottom: 4px;
+}
+
+.icon {
+  position: relative;
+  top: 3px;
+}

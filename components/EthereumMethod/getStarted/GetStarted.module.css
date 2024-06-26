@@ -1,0 +1,44 @@
+.getStarted {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: linear-gradient(
+      267deg,
+      rgba(24, 122, 237, 0.2) 0%,
+      rgba(191, 31, 232, 0.2) 99.72%
+    ),
+    #0d1a1c;
+}
+.getStartedCircle {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 70px;
+  background: linear-gradient(267deg, #187aed 0%, #bf1fe8 100%);
+}
+
+.infoBlock {
+  flex: 1 1 auto;
+}
+
+.button {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(270deg, #187aed 0%, #bf1fe8 100%);
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  transform: translateY(1px);
+}
